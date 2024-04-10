@@ -13,3 +13,19 @@ function loadTemplate(templateName, targetElement) {
 }
 
 loadTemplate("header", "#header");
+
+
+
+//Animazione header 
+window.addEventListener("scroll", function(){
+    const header = document.querySelector("#header-box");
+    const logo = document.querySelector("logo");
+    
+    if (window.scrollY > 0) {
+        header.style.top = "-140px";
+        logo.style.height = "0";
+    } else {
+        header.style.top = "0";
+        logo.style.height = "140px"; 
+    }
+});

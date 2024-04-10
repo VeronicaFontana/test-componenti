@@ -4,33 +4,25 @@ body {
   box-sizing: border-box;
 }
 
-#header {
-  background-color: red;
-  height: 200px;
-}
 #header #header-box {
-  width: 100%;
-  height: 100%;
   background-color: blue;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s ease-in-out;
 }
 #header #header-box #logo {
   height: 140px;
   background-color: green;
-  animation: scrolling linear;
-  animation-timeline: scroll();
 }
 #header #header-box #navbar {
   height: 60px;
   background-color: aqua;
 }
 
-@keyframes scrolling {
-  to {
-    height: 0px;
-  }
-}
 #content {
-  height: 100vh;
+  margin-top: 230px;
 }
 
 /*# sourceMappingURL=main.css.map */

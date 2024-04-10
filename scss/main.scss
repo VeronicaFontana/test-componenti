@@ -8,19 +8,18 @@ body{
 
 //Header
 #header{
-    background-color: red;
-    height: 200px;
-
     #header-box{
-        width: 100%;
-        height: 100%;
         background-color: blue;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: top 0.3s ease-in-out;
 
         #logo{
             height: 140px;
             background-color: green;
-            animation: scrolling linear;
-            animation-timeline: scroll();
+
         }
 
         #navbar{
@@ -30,12 +29,8 @@ body{
     }
 }
 
-@keyframes scrolling{
-    to{height: 0px;}
-}
 
-
-//Content
 #content{
-    height: 100vh;
+    margin-top: 230px;
 }
+
