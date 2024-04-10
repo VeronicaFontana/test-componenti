@@ -19,6 +19,20 @@ body {
 }
 #header #header-box #navbar {
   height: 57px;
+  padding: 20px 18px;
+  display: flex;
+}
+#header #header-box #navbar .col-7 {
+  display: flex;
+  justify-content: end;
+}
+#header #header-box #navbar .col-7 #icons {
+  width: 135px;
+  display: flex;
+  justify-content: space-between;
+}
+#header #header-box #navbar .col-7 #icons i:hover {
+  cursor: pointer;
 }
 
 #content {

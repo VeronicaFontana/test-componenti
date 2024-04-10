@@ -25,6 +25,25 @@ body{
 
         #navbar{
             height: 57px;
+            padding: 20px 18px;
+            display: flex;
+
+            .col-7{
+                display: flex;
+                justify-content: end;
+
+                #icons{
+                    width: 135px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    i:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            
         }
     }
 }
