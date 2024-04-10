@@ -57,9 +57,44 @@ body {
 }
 #header #header-box #menu-container ul {
   list-style: none;
+  padding: 0 20px;
 }
 #header #header-box #menu-container ul li {
-  margin: 25px 0;
+  padding: 25px 0 0 0;
+}
+#header #header-box #menu-container ul li:hover {
+  cursor: pointer;
+}
+#header #header-box #menu-container ul li div {
+  display: flex;
+  justify-content: space-between;
+}
+#header #header-box #menu-container #menu-info {
+  color: #564b57;
+}
+#header #header-box #menu-container #menu-info span {
+  font-size: 0.8rem;
+}
+#header #header-box #menu-container #menu-info i {
+  margin-right: 10px;
+}
+#header #header-box #menu-container #chat-section {
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+}
+#header #header-box #menu-container #chat-section #chat {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 5px #a8a8a8;
+  border-radius: 50%;
+  position: relative;
+}
+#header #header-box #menu-container #chat-section #chat i {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
 
 #content {
