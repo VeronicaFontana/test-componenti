@@ -5,24 +5,24 @@ body {
 }
 
 #header #header-box {
-  background-color: blue;
+  background-color: white;
   position: fixed;
   top: 0;
   width: 100%;
+  max-height: 274px;
   z-index: 1000;
   transition: top 0.3s ease-in-out;
 }
 #header #header-box #logo {
-  height: 140px;
-  background-color: green;
+  height: 217px;
+  padding: 19px 16px 0px 16px;
 }
 #header #header-box #navbar {
-  height: 60px;
-  background-color: aqua;
+  height: 57px;
 }
 
 #content {
-  margin-top: 230px;
+  margin-top: 280px;
 }
 
 /*# sourceMappingURL=main.css.map */
