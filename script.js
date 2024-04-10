@@ -19,15 +19,18 @@ loadTemplate("header", "#header");
 //Animazione header 
 window.addEventListener("scroll", function(){
     const header = document.querySelector("#header-box");
-    const logo = document.querySelector("logo");
-    const content = document.querySelector("#content");
+    const logo = document.querySelector(".logo");
+    const hiddenImage = document.querySelector(".hidden-image");
     
-    if (window.scrollY > 0) {
+    if(window.scrollY > 0){
+        console.log("scrolla")
         header.style.top = "-217px";
-        logo.style.height = "0";
-        content.style.margin = "70px 0px 0px 0px";
-    } else {
-        header.style.top = "0";
+        logo.style.height = "0px";
+        hiddenImage.style.opacity = "1";
+    }else{
+        console.log("non scrolla")
+        header.style.top = "0px";
         logo.style.height = "217px"; 
+        hiddenImage.style.opacity = "0";
     }
 });
