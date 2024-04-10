@@ -55,8 +55,14 @@ body{
                     }
                 }
             }
+        }
 
-            
+        #menu-container{
+            width: 300px;
+            position: absolute;
+            top: 274;
+            right: 0;
+            background-color: red;
         }
     }
 }
