@@ -36,72 +36,223 @@
         </div>
         <div id="menu-container">
             <div>
-                <ul id="menu-cat">
-                    <li>
-                        <div>
-                            <span>IN EVIDENZA</span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <span>BORSE</span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <span>SCARPE</span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <span>ABBIGLIAMENTO</span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <span>PORTAFOGLIO E ACCESSORI</span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <span>PROFUMI</span>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </li>
-                    <li>
-                        <span>MIU MIU CLUB</span>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul id="menu-info">
-                    <li>
-                        <i class="fa-regular fa-user"></i>
-                        <span>Login</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-location-arrow"></i>
-                        <span>Store Locator</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <span>Contattaci</span>
-                    </li>
-                </ul>
-            </div>
-            <div id="chat-section">
-                <div id="chat">
-                    <i class="fa-regular fa-comment-dots"></i>
+                <div>
+                    <ul id="menu-cat">
+                        <li>
+                            <div>
+                                <span>IN EVIDENZA</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>BORSE</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>SCARPE</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>ABBIGLIAMENTO</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>PORTAFOGLIO E ACCESSORI</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span>PROFUMI</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>MIU MIU CLUB</span>
+                        </li>
+                    </ul>
                 </div>
+                <div>
+                    <ul id="menu-info">
+                        <li>
+                            <i class="fa-regular fa-user"></i>
+                            <span>Login</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <span>Store Locator</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Contattaci</span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="chat-section">
+                    <div id="chat">
+                        <i class="fa-regular fa-comment-dots"></i>
+                    </div>
+                </div>
+
+
+
+                <!-- STRUTTURE SIMILI
+                
+                    - Borse e scarpe: titolo, 4 img, titolo e lista su una colonna
+                    - In evidenza e accessori: sottocategorie (accordion) con titolo e lista su due colonne
+                    - Abbigliamento e profumi: titolo e lista su due colonne
+                
+                -->
+
+                <div id="borse-scarpe">
+                    
+                </div>
+                <div id="evidenza-accessori">
+                    
+                </div>
+
+
             </div>
-            
         </div>
     </section>
+
+
+    <!-- TEMPLATE -->
+    <script id="template-borse-scarpe">
+        <h1>Titolo 1</h1>
+        <div>
+            <div class="row">
+                <div class="col-6">
+                    immagine 1
+                </div>
+                <div class="col-6">
+                    immagine 2
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    immagine 3
+                </div>
+                <div class="col-6">
+                    immagine 4
+                </div>
+            </div>
+        </div>
+        <h2>Titolo 2</h2>
+        <div>
+            <ul>
+                <li>elemento</li>
+                <li>elemento</li>
+                <li>elemento</li>
+            </ul>
+        </div>
+    </script>
+
+    <script id="template-evidenza-accessori">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Accordion Item #1
+                </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Accordion Item #2
+                </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Accordion Item #3
+                </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script id="template-abbigliamento-profumi">
+        <h1>Titolo</h1>
+        <div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </script>
+
 
 </body>
 </html>
