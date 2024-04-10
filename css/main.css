@@ -12,6 +12,7 @@ body {
   max-height: 274px;
   z-index: 1000;
   transition: top 0.3s ease-in-out;
+  border-bottom: 1px solid lightgray;
 }
 #header #header-box #logo {
   height: 217px;
@@ -46,11 +47,19 @@ body {
   cursor: pointer;
 }
 #header #header-box #menu-container {
-  width: 300px;
+  width: 385px;
   position: absolute;
   top: 274;
   right: 0;
-  background-color: red;
+  background-color: white;
+  overflow: auto;
+  border-left: 1px solid lightgray;
+}
+#header #header-box #menu-container ul {
+  list-style: none;
+}
+#header #header-box #menu-container ul li {
+  margin: 25px 0;
 }
 
 #content {
